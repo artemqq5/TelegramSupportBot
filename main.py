@@ -120,7 +120,7 @@ async def answer_status_handler(call: types.callback_query):
         await call.message.answer("Чудово! Якщо ще будуть питання - звертайтеся)")
     elif call.data == 'no':
         link_button = InlineKeyboardMarkup()
-        link_button.add(InlineKeyboardButton(text="Для зв'язку з оператором", url=f"https://t.me/mt_dev_artem"))
+        link_button.add(InlineKeyboardButton(text="Для зв'язку з оператором", url=f"https://t.me/test"))
         await call.message.answer("📨", reply_markup=link_button)
 
 
